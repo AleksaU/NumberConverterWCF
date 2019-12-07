@@ -96,7 +96,7 @@ namespace WcfNumberConverter_lab
             return list;
         }
 
-        public IEnumerable<Request> GetUsersRequests(string login)
+        public ICollection<Request> GetUsersRequests(string login)
         {
             var req = ncc.Requests.Join(
                            ncc.Users,
@@ -117,7 +117,19 @@ namespace WcfNumberConverter_lab
 
             return requests;
         }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         private string[] ThouLetters = { "", "M", "MM", "MMM", "MMMM", "MMMMM", "MMMMMM" };

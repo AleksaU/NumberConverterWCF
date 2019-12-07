@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ServiceModel;
 using WcfNumberConverter_lab.Models;
 
@@ -12,7 +13,7 @@ namespace WcfNumberConverter_lab
         IEnumerable<User> GetUsers();
 
         [OperationContract]
-         IEnumerable<Request> GetUsersRequests(string login);
+        ICollection<Request> GetUsersRequests(string login);
 
         [OperationContract]
         void AddUser(User usr);

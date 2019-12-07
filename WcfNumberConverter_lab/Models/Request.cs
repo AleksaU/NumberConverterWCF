@@ -22,6 +22,7 @@ namespace WcfNumberConverter_lab.Models
         [DataMember]
         public DateTime Time { get; set; }
 
+        [DataMember]
         public User UsersRequests { get; set; }
 
 

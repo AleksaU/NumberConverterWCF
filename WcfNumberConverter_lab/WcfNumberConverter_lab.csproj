@@ -79,6 +79,10 @@
     <Compile Include="Migrations\201912071142151_UpdateDBColumnName2.designer.cs">
       <DependentUpon>201912071142151_UpdateDBColumnName2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912071756552_modified.cs" />
+    <Compile Include="Migrations\201912071756552_modified.designer.cs">
+      <DependentUpon>201912071756552_modified.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\NumberConverterContext.cs" />
     <Compile Include="Models\Request.cs" />
@@ -105,6 +109,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201912071142151_UpdateDBColumnName2.resx">
       <DependentUpon>201912071142151_UpdateDBColumnName2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912071756552_modified.resx">
+      <DependentUpon>201912071756552_modified.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

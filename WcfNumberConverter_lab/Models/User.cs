@@ -30,6 +30,8 @@ namespace WcfNumberConverter_lab.Models
         [Required]
         [DataMember]
         public string Email { get; set; }
+
+        [DataMember]
         public ICollection<Request> Requests { get; set; }
 
     }

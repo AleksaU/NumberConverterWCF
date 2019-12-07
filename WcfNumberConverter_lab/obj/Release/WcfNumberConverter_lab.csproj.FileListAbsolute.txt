@@ -11,3 +11,4 @@ D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumber
 D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.pdb
 D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.Migrations.UpdateDBColumnName2.resources
 D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.csproj.GenerateResource.cache
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.Migrations.modified.resources
