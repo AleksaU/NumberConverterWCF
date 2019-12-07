@@ -75,13 +75,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201911240639487_Fixed.cs" />
-    <Compile Include="Migrations\201911240639487_Fixed.designer.cs">
-      <DependentUpon>201911240639487_Fixed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201911240836235_Trying.cs" />
-    <Compile Include="Migrations\201911240836235_Trying.designer.cs">
-      <DependentUpon>201911240836235_Trying.cs</DependentUpon>
+    <Compile Include="Migrations\201912071142151_UpdateDBColumnName2.cs" />
+    <Compile Include="Migrations\201912071142151_UpdateDBColumnName2.designer.cs">
+      <DependentUpon>201912071142151_UpdateDBColumnName2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\NumberConverterContext.cs" />
@@ -106,11 +102,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911240639487_Fixed.resx">
-      <DependentUpon>201911240639487_Fixed.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911240836235_Trying.resx">
-      <DependentUpon>201911240836235_Trying.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912071142151_UpdateDBColumnName2.resx">
+      <DependentUpon>201912071142151_UpdateDBColumnName2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

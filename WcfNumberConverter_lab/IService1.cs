@@ -27,7 +27,10 @@ namespace WcfNumberConverter_lab
         bool checkIfUserExistsBool(string login, string password);
 
         [OperationContract]
-          void AddUserRequest(String login, Request req);
+        User checkIfUserExistsByLogin(string login);
+
+        [OperationContract]
+        void AddUserRequest(String login, int ArabNumber);
 
         [OperationContract]
         string ArabicToRoman(int arabic);

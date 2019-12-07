@@ -1,0 +1,13 @@
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\bin\WcfNumberConverter_lab.dll.config
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\bin\WcfNumberConverter_lab.dll
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\bin\WcfNumberConverter_lab.pdb
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\bin\EntityFramework.dll
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\bin\EntityFramework.SqlServer.dll
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\bin\EntityFramework.xml
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\bin\EntityFramework.SqlServer.xml
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.csprojAssemblyReference.cache
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.csproj.CopyComplete
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.dll
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.pdb
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.Migrations.UpdateDBColumnName2.resources
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.csproj.GenerateResource.cache

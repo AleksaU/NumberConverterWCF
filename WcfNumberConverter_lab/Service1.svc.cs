@@ -6,13 +6,13 @@ using WcfNumberConverter_lab.Models;
 
 namespace WcfNumberConverter_lab
 {
-  
+
     public class Service1 : IService1
     {
+        NumberConverterContext ncc = new NumberConverterContext();
+
         public void AddUser(User usr)
         {
-            NumberConverterContext ncc = new NumberConverterContext();
-
             usr.Id = Guid.NewGuid();
             ncc.Users.Add(usr);
             ncc.SaveChanges();
@@ -20,33 +20,48 @@ namespace WcfNumberConverter_lab
 
         public void AddRequest(Request req)
         {
-            NumberConverterContext ncc = new NumberConverterContext();
             req.Id = Guid.NewGuid();
             ncc.Requests.Add(req);
             ncc.SaveChanges();
         }
 
-        public void AddUserRequest(String login, Request req)
+        public void AddUserRequest(String login, int arabNumber)
         {
-                NumberConverterContext ncc = new NumberConverterContext();
-                var u = (from usr in ncc.Users
-                         where usr.Login == login
-                        select usr).First(); 
-                                            
+            //get user by login
+            var u = (from usr in ncc.Users
+                     where usr.Login == login
+                     select usr).First();
+            string romanToReq = ArabicToRoman(arabNumber);
 
-                u.Requests = new Collection<Request>();
-            req.Id = Guid.NewGuid();
-            u.Requests.Add(req);
-                ncc.SaveChanges();
+            Request reqServ = new Request();
+            reqServ.ArabNumber = arabNumber;
+            reqServ.RomanNumber = romanToReq;
+            reqServ.Time = DateTime.Now;
+            u.Requests = new Collection<Request>();
+            reqServ.Id = Guid.NewGuid();
+            u.Requests.Add(reqServ);
+            ncc.SaveChanges();
 
         }
 
-        
         public User checkIfUserExists(string login, string password)
         {
-            NumberConverterContext ncc = new NumberConverterContext();
             var c = (from usr in ncc.Users
                      .Where(x => x.Login == login && x.Password == password)
+                     select usr).FirstOrDefault();
+
+            if (c != null)
+            {
+                return c;
+            }
+
+            return null;
+        }
+
+        public User checkIfUserExistsByLogin(string login)
+        {
+            var c = (from usr in ncc.Users
+                     .Where(x => x.Login == login)
                      select usr).FirstOrDefault();
 
             if (c != null)
@@ -60,7 +75,6 @@ namespace WcfNumberConverter_lab
 
         public bool checkIfUserExistsBool(string login, string password)
         {
-            NumberConverterContext ncc = new NumberConverterContext();
             var c = (from usr in ncc.Users
                      .Where(x => x.Login == login && x.Password == password)
                      select usr).FirstOrDefault();

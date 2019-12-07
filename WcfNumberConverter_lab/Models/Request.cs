@@ -11,19 +11,16 @@ namespace WcfNumberConverter_lab.Models
 
         [Required]
         [DataMember]
-        public double ArabicNumber { get; set; }
+        public int ArabNumber { get; set; }
 
         [Required]
         [DataMember]
         public string RomanNumber { get; set; }
 
-        [Required]
-        [DataMember]
-        public int Count { get; set; }
 
         [Required]
         [DataMember]
-        public string Time { get; set; }
+        public DateTime Time { get; set; }
 
         public User UsersRequests { get; set; }
 
