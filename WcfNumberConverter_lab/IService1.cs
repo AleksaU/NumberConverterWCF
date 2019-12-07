@@ -12,13 +12,10 @@ namespace WcfNumberConverter_lab
         IEnumerable<User> GetUsers();
 
         [OperationContract]
-         IEnumerable<Request> GetUsersRequests();
+         IEnumerable<Request> GetUsersRequests(string login);
 
         [OperationContract]
         void AddUser(User usr);
-
-        [OperationContract]
-           void AddRequest(Request req);
 
         [OperationContract]
         User checkIfUserExists(string login, string password);
@@ -30,10 +27,12 @@ namespace WcfNumberConverter_lab
         User checkIfUserExistsByLogin(string login);
 
         [OperationContract]
-        void AddUserRequest(String login, int ArabNumber);
+        string AddUserRequest(String login, int ArabNumber);
 
         [OperationContract]
         string ArabicToRoman(int arabic);
+
+
 
 
 

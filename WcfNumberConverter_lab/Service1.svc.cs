@@ -25,7 +25,7 @@ namespace WcfNumberConverter_lab
             ncc.SaveChanges();
         }
 
-        public void AddUserRequest(String login, int arabNumber)
+        public string AddUserRequest(String login, int arabNumber)
         {
             //get user by login
             var u = (from usr in ncc.Users
@@ -41,7 +41,7 @@ namespace WcfNumberConverter_lab
             reqServ.Id = Guid.NewGuid();
             u.Requests.Add(reqServ);
             ncc.SaveChanges();
-
+            return reqServ.RomanNumber;
         }
 
         public User checkIfUserExists(string login, string password)
@@ -96,11 +96,28 @@ namespace WcfNumberConverter_lab
             return list;
         }
 
-        public IEnumerable<Request> GetUsersRequests()
+        public IEnumerable<Request> GetUsersRequests(string login)
         {
-            throw new NotImplementedException();
-        }
+            var req = ncc.Requests.Join(
+                           ncc.Users,
+                           r => r.UsersRequests.Id,
+                           u => u.Id,
+                           (r, u) => new
+                           {
+                               Arab = r.ArabNumber,
+                               Rom = r.RomanNumber,
+                               Time = r.Time,
+                               Login = u.Login
+                           }).Where(all => all.Login == login).ToList();
 
+            ICollection<Request> requests = new Collection<Request>();
+
+            foreach (var r in req)
+                requests.Add(new RequestBuilder().ArabNumber(r.Arab).RomanNumber(r.Rom).SetTime(r.Time).create());
+
+            return requests;
+        }
+    
 
 
         private string[] ThouLetters = { "", "M", "MM", "MMM", "MMMM", "MMMMM", "MMMMMM" };

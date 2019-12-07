@@ -82,6 +82,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\NumberConverterContext.cs" />
     <Compile Include="Models\Request.cs" />
+    <Compile Include="Models\RequestBuilder.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
