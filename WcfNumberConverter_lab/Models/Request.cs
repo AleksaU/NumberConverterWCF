@@ -4,6 +4,7 @@ using System.Runtime.Serialization;
 
 namespace WcfNumberConverter_lab.Models
 {
+
     public class Request
     {
         [Key]

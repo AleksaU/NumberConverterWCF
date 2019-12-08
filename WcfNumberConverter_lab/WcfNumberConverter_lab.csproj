@@ -83,11 +83,20 @@
     <Compile Include="Migrations\201912071756552_modified.designer.cs">
       <DependentUpon>201912071756552_modified.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912072351177_MigrateReq.cs" />
+    <Compile Include="Migrations\201912072351177_MigrateReq.designer.cs">
+      <DependentUpon>201912072351177_MigrateReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912072356071_MigrateRequest.cs" />
+    <Compile Include="Migrations\201912072356071_MigrateRequest.designer.cs">
+      <DependentUpon>201912072356071_MigrateRequest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\NumberConverterContext.cs" />
     <Compile Include="Models\Request.cs" />
     <Compile Include="Models\RequestBuilder.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="RequestDto.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -112,6 +121,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912071756552_modified.resx">
       <DependentUpon>201912071756552_modified.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912072351177_MigrateReq.resx">
+      <DependentUpon>201912072351177_MigrateReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912072356071_MigrateRequest.resx">
+      <DependentUpon>201912072356071_MigrateRequest.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
