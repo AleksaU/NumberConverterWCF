@@ -14,3 +14,4 @@ D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumber
 D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.Migrations.modified.resources
 D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.Migrations.MigrateReq.resources
 D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.Migrations.MigrateRequest.resources
+D:\Sharp\WcfPart\NumberConverterWCF\WcfNumberConverter_lab\obj\Release\WcfNumberConverter_lab.Migrations.changed.resources

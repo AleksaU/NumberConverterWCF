@@ -118,20 +118,6 @@ namespace WcfNumberConverter_lab
             return requests;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private string[] ThouLetters = { "", "M", "MM", "MMM", "MMMM", "MMMMM", "MMMMMM" };
         private string[] HundLetters =
             { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };

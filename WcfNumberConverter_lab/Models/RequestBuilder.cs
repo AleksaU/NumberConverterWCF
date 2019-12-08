@@ -6,7 +6,6 @@ namespace WcfNumberConverter_lab.Models
     public class RequestBuilder
     {
         private Request request;
-        //   private UserDao userDao = new EntityFrameworkUserDao();
 
         public RequestBuilder()
         {
@@ -42,13 +41,6 @@ namespace WcfNumberConverter_lab.Models
             request.RomanNumber = romanNumber;
             return this;
         }
-
-
-        //public RequestBuilder User(string login)
-        // {
-        //     request.UsersRequests = userDao.GetUserByLogin(login);
-        //     return this;
-        //  }
 
         public Request create()
         {

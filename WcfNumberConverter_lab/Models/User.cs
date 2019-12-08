@@ -31,7 +31,7 @@ namespace WcfNumberConverter_lab.Models
         [DataMember]
         public string Email { get; set; }
 
-        [DataMember]
+        //[DataMember]
         public ICollection<Request> Requests { get; set; }
 
     }

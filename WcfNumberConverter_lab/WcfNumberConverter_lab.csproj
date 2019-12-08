@@ -91,12 +91,15 @@
     <Compile Include="Migrations\201912072356071_MigrateRequest.designer.cs">
       <DependentUpon>201912072356071_MigrateRequest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912081006478_changed.cs" />
+    <Compile Include="Migrations\201912081006478_changed.designer.cs">
+      <DependentUpon>201912081006478_changed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\NumberConverterContext.cs" />
     <Compile Include="Models\Request.cs" />
     <Compile Include="Models\RequestBuilder.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="RequestDto.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -127,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912072356071_MigrateRequest.resx">
       <DependentUpon>201912072356071_MigrateRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912081006478_changed.resx">
+      <DependentUpon>201912081006478_changed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
